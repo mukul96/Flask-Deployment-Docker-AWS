@@ -8,6 +8,7 @@
   phases:
     install:
       commands:
+        - ls /root/.kube/config
         - curl -sS -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/aws-iam-authenticator
         - curl -sS -o kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/kubectl
         - chmod +x ./kubectl ./aws-iam-authenticator
@@ -33,6 +34,7 @@
         - export AWS_SESSION_TOKEN="$(echo ${CREDENTIALS} | jq -r '.Credentials.SessionToken')"
         - export AWS_EXPIRATION=$(echo ${CREDENTIALS} | jq -r '.Credentials.Expiration')
         - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME
+        - ls
         - kubectl apply -f simple_jwt_api.yml
         - printf '[{"name":"simple_jwt_api","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > build.json
         - pwd

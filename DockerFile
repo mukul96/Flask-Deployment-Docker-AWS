@@ -1,6 +1,7 @@
 FROM python:stretch
 
 
+
 # set work directory
 COPY . /app
 WORKDIR /app

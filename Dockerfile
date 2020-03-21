@@ -6,8 +6,6 @@ FROM python:stretch
 COPY . /app
 WORKDIR /app
 
-
-
 # set environment variables
 ENV PYTHONUNBUFFERED 1 \
     PYTHONDONTWRITEBYTECODE 1 \

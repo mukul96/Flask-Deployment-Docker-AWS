@@ -3,7 +3,7 @@ version: 0.2
 
 env:
   parameter-store:
-    JWT_SECRET: 5e332dfcebcf596ad4f3473eeae5cd8fad859e78
+    JWT_SECRET: 80de0ce7883e9071a23c1319b30dbfff8028d9b8
 
 
 phases:

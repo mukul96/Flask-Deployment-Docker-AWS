@@ -8,7 +8,7 @@ Parameters:
 
   EksClusterName:
     Type: String
-    Description: 
+    Description: simple-jwt-api
     Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
@@ -16,8 +16,8 @@ Parameters:
 
   GitSourceRepo:
     Type: String
-    Description: https://github.com/mukul96/Flask-Deployment-Docker-AWS
-    Default: https://github.com/mukul96/Flask-Deployment-Docker-AWS
+    Description: Flask-Deployment-Docker-AWS
+    Default: Flask-Deployment-Docker-AWS
     MinLength: 1
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub repository name
@@ -41,7 +41,7 @@ Parameters:
   GitHubUser:
     Type: String
     Default: mukul96
-    Description: 
+    Description: my username
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub username or organization

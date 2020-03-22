@@ -36,7 +36,7 @@ Completing the project involves several steps:
 6. Create a CodeBuild stage which will build, test, and deploy your code
 
 
-As the domain to buy from aws was costly I added a free domain
+As the domain to buy from aws was costly I added a free domain and this is the url 
 http://1e54beb1.ngrok.io/
 
 
